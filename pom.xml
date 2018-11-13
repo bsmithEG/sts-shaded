@@ -8,7 +8,7 @@
     <artifactId>sts-shaded</artifactId>
     <version>1.11.171-evg1</version>  <!-- SYNC WITH property sts.version BELOW -->
 
-    <description>Lightly-shaded AWS SES library.</description>
+    <description>Lightly-shaded AWS STS library.</description>
 
     <properties>
         <!-- SYNC WITH project version ABOVE -->
@@ -53,7 +53,7 @@
                                     <shadedPattern>${sts.shade.prefix}.jackson</shadedPattern>
                                 </relocation>
                             </relocations>
-                            <transformers>
+
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer" />
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                             </transformers>
